@@ -1,0 +1,35 @@
+\documentclass[a4paper]{cqut} % article、book、report；ctexart、ctexrep、ctexbook.
+
+\begin{document}
+% ==================== cover =========================
+\cvteacher{甘\quad 彬}
+\cvname{刘金炜}
+\cvxueyuan{机械工程学院}
+\cvclass{115120401}
+\cvnumber{11512990122}
+\cvzhuanye{机械电子}
+\cvtitle{基于PLC的多路口智能交通控制系统设计}
+\cvzhicheng{教授}
+\cvdate{2018年10月24日}
+\makecover
+% ==================== abstract ========================
+\pagestyle{fancy}
+\pagenumbering{Roman}
+\include{tex/abstract}
+\makeabstract
+% ==================== table of contents ==================
+\tableofcontents
+\thispagestyle{myheadings}
+% ======================= 正文 =======================
+\clearpage
+\pagenumbering{arabic}
+\include{tex/chaper1}
+% ======================= 感谢 =======================
+\include{tex/thinks}
+% ======================= 参考文献 ====================
+\bibliography{bibfile}
+\clearpage
+\include{tex/appendices}
+% ======================= 文献综述 ====================
+\include{tex/documents}
+\end{document}
